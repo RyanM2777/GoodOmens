@@ -6,7 +6,7 @@ function Gallery() {
 
 <div class=" flex items-center gap-4 bg-white">
   <div class="flex-1 h-px bg-gray-300"></div>
-  <span class="text-gray-700">LAUREN'S GALLERY</span>
+  <span class="text-gray-700">LAUREN&#39;S GALLERY</span>
   <div class="flex-1 h-px bg-gray-300"></div>
 </div>
 
@@ -53,7 +53,7 @@ function Gallery() {
 </div>
 <div class=" flex items-center gap-4 bg-white">
   <div class="flex-1 h-px bg-gray-300"></div>
-  <span class="text-gray-700">EMILY'S GALLERY</span>
+  <span class="text-gray-700">EMILY&#39;S GALLERY</span>
   <div class="flex-1 h-px bg-gray-300"></div>
 </div>
 
@@ -105,7 +105,7 @@ function Gallery() {
 </div>
 <div class=" flex items-center gap-4 bg-white">
   <div class="flex-1 h-px bg-gray-300"></div>
-  <span class="text-gray-700">STEVEN'S GALLERY</span>
+  <span class="text-gray-700">STEVEN&#39;S GALLERY</span>
   <div class="flex-1 h-px bg-gray-300"></div>
 </div>
 
@@ -158,7 +158,7 @@ function Gallery() {
 
 <div class=" flex items-center gap-4 bg-white">
   <div class="flex-1 h-px bg-gray-300"></div>
-  <span class="text-gray-700">IAIN'S GALLERY</span>
+  <span class="text-gray-700">IAIN&#39;S GALLERY</span>
   <div class="flex-1 h-px bg-gray-300"></div>
 </div>
 
