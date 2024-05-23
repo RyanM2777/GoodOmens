@@ -4,6 +4,7 @@ import HomeHeader from "./_components/HomeHeader"
 import Team from "./_components/Team"
 import Testimonials from "./_components/Testimonials"
 import Footer from './_components/Footer'
+import Faq from "./_components/FaqTattoo";
 
 
 export default function Home() {

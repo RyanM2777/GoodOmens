@@ -1,6 +1,6 @@
 export default function Example() {
     return (
-      <div className="flow-root rounded-lg border bg-white border-gray-100 py-3 shadow-sm">
+      <div className="flow-root rounded-lg border bg-tealGreen-100 border-gray-100 py-3 shadow-sm">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <dl className="-my-3 divide-y divide-gray-300 text-sm">
             <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">

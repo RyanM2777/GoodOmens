@@ -22,13 +22,13 @@ const people = [
         name: 'Iain',
         role: '@tattoosbyhank1981',
         imageUrl:
-          'https://media.discordapp.net/attachments/1194400893781688472/1242746504687648829/1598ca4c-0674-4696-90a1-1a4cc8f5dd48.jpg?ex=664ef55f&is=664da3df&hm=27a6c5c44dab976f0cfe462decdbd410773ca9ec4161f123f579b30f1268fbce&=&format=webp&width=526&height=701',
+          'https://media.discordapp.net/attachments/1194400893781688472/1243236489786298448/1598ca4c-0674-4696-90a1-1a4cc8f5dd48.jpg?ex=6650bdb5&is=664f6c35&hm=ba19fc54f74fb06bb75a3dcfa7cbeeeb890513dc63c5899326348edad40855c8&=&format=webp&width=526&height=702',
       },
   ]
   
   export default function Example() {
     return (
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-tealGreen-100 py-24 sm:py-32">
             <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
                 <div className="max-w-2xl">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet the Experts</h2>
