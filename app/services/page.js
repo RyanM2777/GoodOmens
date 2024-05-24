@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from '../_components/Navbar'
-import Services from '../_components/Services'
 import Footer from '../_components/Footer'
+import ServicesFAQ from '../_components/ServicesFAQ'
+import Pricelist from '../_components/Pricelist'
 
 function page() {
   return (
     <>
     <Navbar />
-    <Services />
+    <Pricelist />
+    <ServicesFAQ />
     <Footer />
     </>
   )
