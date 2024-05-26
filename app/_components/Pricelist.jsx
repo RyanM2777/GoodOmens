@@ -16,7 +16,7 @@ const Pricelist = () => {
           </p>
           <div className="flex items-center gap-4 bg-tealGreen-100 cursor-pointer" onClick={togglePrices}>
             <div className="flex-1 h-px bg-gray-300"></div>
-            <span className="text-gray-700">PIERCING PRICES</span>
+            <span className="text-gray-700">PIERCING PRICES &#8595;</span>
             <div className="flex-1 h-px bg-gray-300"></div>
           </div>
         </div>
