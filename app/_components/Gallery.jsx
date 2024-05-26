@@ -13,7 +13,7 @@ function Gallery() {
 
     <div class="grid  grid-cols-1 gap-4 bg-white sm:grid-cols-2 md:grid-cols-3">
   <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
+    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg bg-tealGreen-100"
       src="/Lauren/1.jpeg"
       alt="gallery-photo" />
   </div>
