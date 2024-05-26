@@ -22,7 +22,7 @@ function ServicesFAQ() {
           <div className="bg-tealGreen-100">
             <div className="flex items-center gap-4 bg-tealGreen-100 mb-4 cursor-pointer" onClick={toggleTattoosFAQ}>
               <div className="flex-1 h-px bg-gray-300"></div>
-              <span className="text-gray-700">TATTOOS FAQs</span>
+              <span className="text-gray-700">TATTOOS FAQs &#8595;</span>
               <div className="flex-1 h-px bg-gray-300"></div>
             </div>
             {showTattoosFAQ && (
@@ -110,7 +110,7 @@ For any other queries please contact us on the booking form <div className="mt-2
           <div className="bg-tealGreen-100">
             <div className="flex items-center gap-4 bg-tealGreen-100 mb-4 cursor-pointer" onClick={togglePiercingsFAQ}>
               <div className="flex-1 h-px bg-gray-300"></div>
-              <span className="text-gray-700">PIERCINGS FAQs</span>
+              <span className="text-gray-700">PIERCINGS FAQs &#8595;</span>
               <div className="flex-1 h-px bg-gray-300"></div>
             </div>
             {showPiercingsFAQ && (
