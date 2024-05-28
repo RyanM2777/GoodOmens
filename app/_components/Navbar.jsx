@@ -49,14 +49,14 @@ export default function Example() {
           <a href="/about" className="text-sm z-50 font-semibold leading-6 text-gray-900">
             About Us
           </a>
-          <a href="/team" className="text-sm z-50 font-semibold leading-6 text-gray-900">
-            Team
+          <a href="/artists" className="text-sm z-50 font-semibold leading-6 text-gray-900">
+            Artists
           </a>
           <a href="/services" className="text-sm z-50 font-semibold leading-6 text-gray-900">
             Services
           </a>
-          <a href="/gallery" className="text-sm z-50 font-semibold leading-6 text-gray-900">
-            Gallery
+          <a href="/events" className="text-sm z-50 font-semibold leading-6 text-gray-900">
+            Events
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -102,10 +102,10 @@ export default function Example() {
                   About Us
                 </a>
                 <a
-                  href="/team"
+                  href="/artists"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Team
+                  Artists
                 </a>
                 <a
                   href="/services"
@@ -114,10 +114,10 @@ export default function Example() {
                   Services
                 </a>
                 <a
-                  href="/gallery"
+                  href="/events"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Gallery
+                  Events
                 </a>
               </div>
               <div className="py-6">

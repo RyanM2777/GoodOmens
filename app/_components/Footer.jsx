@@ -30,7 +30,7 @@ function Footer() {
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="/team"> Team </a>
+        <a className="text-gray-700 transition hover:text-gray-700/75" href="/artists"> Artists </a>
       </li>
 
       <li>
@@ -38,7 +38,7 @@ function Footer() {
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="/gallery"> Gallery </a>
+        <a className="text-gray-700 transition hover:text-gray-700/75" href="/Events"> Events </a>
       </li>
 
       <li>

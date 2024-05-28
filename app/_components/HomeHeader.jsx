@@ -6,9 +6,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'About Us', href: '/about', current: false },
-    { name: 'Team', href: '/team', current: false },
+    { name: 'Artists', href: '/artists', current: false },
     { name: 'Services', href: '/services', current: false },
-    { name: 'Gallery', href: '/gallery', current: false },
+    { name: 'Events', href: '/Events', current: false },
 ]
 
 export default function Example() {
@@ -115,8 +115,8 @@ export default function Example() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Check out our gallery!{' '}
-              <a href="/gallery" className="font-semibold text-tealGreen-400">
+              Check out our artists!{' '}
+              <a href="/artists" className="font-semibold text-tealGreen-400">
                 <span className="absolute inset-0" aria-hidden="true" />
                 View Now <span aria-hidden="true">&rarr;</span>
               </a>
@@ -138,7 +138,7 @@ export default function Example() {
               >
                 Get started
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-tealGreen-400">
+              <a href="/about" className="text-sm font-semibold leading-6 text-tealGreen-400">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

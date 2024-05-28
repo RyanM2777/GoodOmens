@@ -22,7 +22,7 @@ const people = [
         name: 'Iain',
         role: '@tattoosbyhank1981',
         imageUrl:
-          'https://media.discordapp.net/attachments/1194400893781688472/1243236489786298448/1598ca4c-0674-4696-90a1-1a4cc8f5dd48.jpg?ex=6650bdb5&is=664f6c35&hm=ba19fc54f74fb06bb75a3dcfa7cbeeeb890513dc63c5899326348edad40855c8&=&format=webp&width=526&height=702',
+          '/ProfileIain.jpg',
       },
   ]
   
@@ -31,7 +31,7 @@ const people = [
       <div className="bg-tealGreen-100 py-24 sm:py-32">
             <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
                 <div className="max-w-2xl">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet the Experts</h2>
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet the Artists</h2>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
                         Each expert brings their own artistic flair and attention to detail, ensuring that every piece is not only beautiful but also safely and expertly crafted.
                     </p>
