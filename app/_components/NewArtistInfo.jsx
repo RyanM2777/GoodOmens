@@ -271,7 +271,8 @@ function NewArtistInfo() {
         <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
           <dt className="font-medium text-gray-900">Bio</dt>
           <dd className="text-gray-700 sm:col-span-2">
-            
+            Iain began tattooing in 2005 and has since worked all over including, Denmark, Sweden, Spain, and the Cayman Islands. Due to this he is capable of covering all styles of work and designs. 
+He prefers Japanese and dark horror work but anything else is happily taken on too.
           </dd>
         </div>
       </dl>
