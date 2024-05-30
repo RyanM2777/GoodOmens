@@ -15,7 +15,7 @@ function Footer() {
       />
     </div>
 
-    <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+    <p className="mx-auto mt-6 max-w-lg text-center leading-relaxed text-gray-500">
     Vibrant and friendly Tattoo studio located in Dundee city centre!
 
     </p>

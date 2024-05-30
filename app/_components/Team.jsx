@@ -46,6 +46,7 @@ const people = [
                                     <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
                                 </div>
                             </div>
+                            
                         </li>
                     ))}
                 </ul>

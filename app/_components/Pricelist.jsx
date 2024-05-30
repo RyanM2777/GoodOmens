@@ -819,7 +819,7 @@ const Pricelist = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  <span>Nipple (single) | 17+ ONLY</span>
+                  <span>Nipple (single) | 16+ ONLY</span>
                 </div>
                 <span class="text-right">£35</span>
               </li>
@@ -837,7 +837,7 @@ const Pricelist = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  <span>Nipple (double) | 17+ ONLY</span>
+                  <span>Nipple (double) | 16+ ONLY</span>
                 </div>
                 <span class="text-right">£35</span>
               </li>
@@ -855,7 +855,7 @@ const Pricelist = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  <span>Dermal | 17+ ONLY</span>
+                  <span>Dermal | 16+ ONLY</span>
                 </div>
                 <span class="text-right">£40</span>
               </li>
@@ -873,7 +873,7 @@ const Pricelist = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  <span>Surface Piercings | 17+ ONLY</span>
+                  <span>Surface Piercings | 16+ ONLY</span>
                 </div>
                 <span class="text-right">£40</span>
               </li>

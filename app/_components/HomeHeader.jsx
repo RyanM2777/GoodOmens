@@ -123,17 +123,17 @@ export default function Example() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Ink Your Story, Pierce Your Identity
+            <h1 className="text-4xl font-bold tracking-normal text-gray-900 sm:text-6xl">
+              Good Omens Tattoo and Piercing
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8  text-gray-600">
               Welcome to Good Omens, Dundee&#39;s Premier Tattoo & Piercing Studio!
 
               Experience a vibrant and welcoming atmosphere at our top-rated studio in Dundee. Our talented artists and piercers are dedicated to transforming your visions into stunning works of art. Whether you&#39;re seeking a bold new tattoo, a delicate piece of body art, or a stylish piercing, we are here to provide exceptional quality and unparalleled creativity. Join us to express your individuality in a friendly and professional environment where your satisfaction and comfort are our top priorities.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="/services"
                 className="rounded-md bg-tealGreen-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-tealGreen-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
