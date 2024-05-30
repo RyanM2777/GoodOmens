@@ -73,7 +73,7 @@ function NewArtistInfo() {
             <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
               <dt className="font-medium text-gray-900">Bio</dt>
               <dd className="text-gray-700 sm:col-span-2">
-                Emily started learning to tattoo 7 years ago in Glasgow before taking time out to get a degree in Computer Arts, specialising in 3D environment art for video games. She's been been back tattooing for over a year now and mainly works in illustrative blackwork, but is happy to work with other styles. Emily loves to tattoo all things gothic, horror and spooky, but also anything video games or simpsons themed, or all of the above combined!
+                Emily started learning to tattoo 7 years ago in Glasgow before taking time out to get a degree in Computer Arts, specialising in 3D environment art for video games. She&rsquo;s been been back tattooing for over a year now and mainly works in illustrative blackwork, but is happy to work with other styles. Emily loves to tattoo all things gothic, horror and spooky, but also anything video games or simpsons themed, or all of the above combined!
               </dd>
             </div>
           </dl>
@@ -110,7 +110,7 @@ function NewArtistInfo() {
             <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
               <dt className="font-medium text-gray-900">Bio</dt>
               <dd className="text-gray-700 sm:col-span-2">
-                Steven is a versatile and established artist with over a decade in the tattoo industry. With a previous history in fine art, Steven found his way into tattooing through portraiture and realism. Fueling his desire to learn, he's worked all over; from his home town of Dunfermline, to Glasgow, London and as far as California. Focusing on neo traditional, and with a background in realism and portraiture - Steven is equipped to take on any tattoo idea you might have.
+                Steven is a versatile and established artist with over a decade in the tattoo industry. With a previous history in fine art, Steven found his way into tattooing through portraiture and realism. Fueling his desire to learn, he&rsquo;s worked all over; from his home town of Dunfermline, to Glasgow, London and as far as California. Focusing on neo traditional, and with a background in realism and portraiture - Steven is equipped to take on any tattoo idea you might have.
               </dd>
             </div>
           </dl>
@@ -147,7 +147,7 @@ function NewArtistInfo() {
             <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
               <dt className="font-medium text-gray-900">Bio</dt>
               <dd className="text-gray-700 sm:col-span-2">
-                Iain got into tattooing after working as an illustrator and artist for years. Working as a concept artist in the video game industry led him to create unique tattoo designs, as he wanted to bring some of that same creativity and imagination to body art. Specializing in illustrative black and grey tattoos, Iain enjoys creating detailed and dynamic pieces that tell a story. Whether it's a fantasy scene or a realistic portrait, he's always up for a challenge.
+                Iain got into tattooing after working as an illustrator and artist for years. Working as a concept artist in the video game industry led him to create unique tattoo designs, as he wanted to bring some of that same creativity and imagination to body art. Specializing in illustrative black and grey tattoos, Iain enjoys creating detailed and dynamic pieces that tell a story. Whether it&rsquo;s a fantasy scene or a realistic portrait, he&rsquo;s always up for a challenge.
               </dd>
             </div>
           </dl>
