@@ -53,7 +53,7 @@ export default function Example() {
             Artists
           </a>
           <a href="/services" className="text-sm z-50 font-semibold leading-6 text-gray-900">
-            Services
+            Prices/FAQ
           </a>
           <a href="/events" className="text-sm z-50 font-semibold leading-6 text-gray-900">
             Events
@@ -111,7 +111,7 @@ export default function Example() {
                   href="/services"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Services
+                  Prices/FAQ
                 </a>
                 <a
                   href="/events"
