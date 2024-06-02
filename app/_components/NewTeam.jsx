@@ -34,7 +34,7 @@ export default function NewTeam() {
                         Each expert brings their own artistic flair and attention to detail, ensuring that every piece is not only beautiful but also safely and expertly crafted.
                     </p>
                 </div>
-                <ul role="list" className="mt-12 grid gap-y-12 lg:grid-cols-2 sm:grid-cols-2 sm:gap-y-16">
+                <ul role="list" className="mt-12  gap-y-12  sm:gap-y-16">
                     {people.map((person) => (
                         <li key={person.name}>
                             <div className="flex items-center gap-x-6">
