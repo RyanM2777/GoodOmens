@@ -55,9 +55,14 @@ export default function NewTeam() {
 
 function NewArtistInfo({ person }) {
     const [showDetails, setShowDetails] = useState(false);
+    const [enlargedImage, setEnlargedImage] = useState(null);
 
     const toggleDetails = () => {
         setShowDetails(prevState => !prevState);
+    };
+
+    const toggleEnlargedImage = (src) => {
+        setEnlargedImage(enlargedImage === src ? null : src);
     };
 
     const artistDetails = {
@@ -101,6 +106,30 @@ function NewArtistInfo({ person }) {
 
     return (
         <div className="bg-tealGreen-100">
+            <style jsx>{`
+                .overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background: rgba(0, 0, 0, 0.5);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 1000;
+                }
+                .enlarged {
+                    max-width: 90vw;
+                    max-height: 90vh;
+                    width: auto;
+                    height: auto;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+                .gallery-image {
+                    cursor: pointer;
+                }
+            `}</style>
             <div className="flex items-center gap-4 bg-tealGreen-100 mb-4 cursor-pointer" onClick={toggleDetails}>
                 <div className="flex-1 h-px bg-gray-300"></div>
                 <span className="text-gray-700">{person} &#8595;</span>
@@ -125,10 +154,20 @@ function NewArtistInfo({ person }) {
                     <div className="grid grid-cols-1 gap-4 mt-3 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-3">
                         {artistDetails[person].images.map((image, index) => (
                             <div key={index}>
-                                <img className="object-cover object-center w-full h-45 max-w-full rounded-lg" src={image} alt="gallery-photo" />
+                                <img
+                                    className={`object-cover object-center w-full h-45 max-w-full rounded-lg gallery-image ${enlargedImage === image ? 'enlarged' : ''}`}
+                                    src={image}
+                                    alt="gallery-photo"
+                                    onClick={() => toggleEnlargedImage(image)}
+                                />
                             </div>
                         ))}
                     </div>
+                </div>
+            )}
+            {enlargedImage && (
+                <div className="overlay" onClick={() => setEnlargedImage(null)}>
+                    <img className="enlarged" src={enlargedImage} alt="enlarged-photo" />
                 </div>
             )}
         </div>
