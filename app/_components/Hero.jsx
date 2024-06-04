@@ -33,7 +33,7 @@ const Hero = () => {
           </a>
           <a
             href="/contact"
-            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-tealGreen-400 border border-tealGreen-400 rounded-lg hover:bg-tealGreen-400 focus:ring-4 focus:ring-tealGreen-300 "
+            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-tealGreen-400 border border-tealGreen-400 rounded-lg hover:bg-tealGreen-400 hover:text-white focus:ring-4 focus:ring-tealGreen-300 "
           >
             Speak to Us
           </a>
