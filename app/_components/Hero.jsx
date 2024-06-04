@@ -19,7 +19,7 @@ const Hero = () => {
             </a> 
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="/goodomens.jpg" alt="Store Front">
+            <img src="/goodomens.jpg" alt="Store Front"></img>
         </div>                
     </div>
 </section>
