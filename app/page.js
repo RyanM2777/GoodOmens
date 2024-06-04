@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://goodomens.co.uk" />
+      <meta property="og:url" content="https://goodomenstattoo.co.uk" />
       <meta property="og:title" content={metadata.title} />
       <meta property="og:description" content={metadata.description} />
       <meta property="og:image" content="/GoodOmensCircle.png" />
@@ -43,7 +43,7 @@ export default function Home() {
  <link rel="icon" href="/GoodOmensCircle.png" type="image/x-icon" />
 
       {/* Canonical Tag */}
-      <link rel="canonical" href="https://www.goodomens.co.uk" />
+      <link rel="canonical" href="https://www.goodomenstattoo.co.uk" />
     </>
   );
 }
