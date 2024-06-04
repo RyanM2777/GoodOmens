@@ -15,7 +15,7 @@ const Hero = () => {
                   Good Omens Tattoo and Piercing
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
-                  Welcome to Good Omens, Dundee's Premier Tattoo & Piercing Studio! Experience a vibrant and welcoming atmosphere at our top-rated studio in Dundee. Our talented artists and piercers are dedicated to transforming your visions into stunning works of art. Whether you're seeking a bold new tattoo, a delicate piece of body art, or a stylish piercing, we are here to provide exceptional quality and unparalleled creativity. Join us to express your individuality in a friendly and professional environment where your satisfaction and comfort are our top priorities.
+                  Welcome to Good Omens, Dundee&rsquo;s Premier Tattoo & Piercing Studio! Experience a vibrant and welcoming atmosphere at our top-rated studio in Dundee. Our talented artists and piercers are dedicated to transforming your visions into stunning works of art. Whether you&rsquo;re seeking a bold new tattoo, a delicate piece of body art, or a stylish piercing, we are here to provide exceptional quality and unparalleled creativity. Join us to express your individuality in a friendly and professional environment where your satisfaction and comfort are our top priorities.
                 </p>
                 <ul className="flex flex-wrap items-center">
                   <li>
