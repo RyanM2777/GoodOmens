@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-5/12">
               <div className="hero-content">
-                <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark  sm:text-[42px] lg:text-[40px] xl:text-5xl">
+                <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-black  sm:text-[42px] lg:text-[40px] xl:text-5xl">
                   Good Omens Tattoo and Piercing
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-body-color ">
@@ -21,7 +21,7 @@ const Hero = () => {
                   <li>
                     <a
                       href="/services"
-                      className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-dark lg:px-7"
+                      className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-center text-base font-medium text-black hover:bg-blue-dark lg:px-7"
                     >
                       Get Started
                     </a>
@@ -29,7 +29,7 @@ const Hero = () => {
                   <li>
                     <a
                       href="/artists"
-                      className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] hover:text-primary dark:text-white"
+                      className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-black"
                     >
                       <span className="mr-2">
                         <svg
@@ -65,7 +65,7 @@ const Hero = () => {
                   </li>
                 </ul>
                 <div className="clients pt-16">
-                  <h6 className="mb-6 flex items-center text-xs font-normal text-body-color ">
+                  <h6 className="mb-6 flex items-center text-xs font-normal text-black ">
                     Some Of Our Clients
                     <span className="ml-3 inline-block h-px w-8 bg-body-color"></span>
                   </h6>
@@ -165,12 +165,12 @@ const Navbar = () => {
           <div className="w-60 max-w-full px-4">
             <a href="/#" className="block w-full py-5">
               <img
-                src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
+                src="/GoodOmens.png"
                 alt="logo"
                 className="w-full dark:hidden"
               />
               <img
-                src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
+                src="/GoodOmens.png"
                 alt="logo"
                 className="w-full hidden dark:block"
               />
@@ -191,7 +191,7 @@ const Navbar = () => {
               </button>
               <nav
                 id="navbarCollapse"
-                className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white px-6 py-5 shadow  lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:shadow-none lg:dark:bg-transparent ${
+                className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-tealGreen-100 px-6 py-5 shadow  lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:shadow-none  ${
                   !open && "hidden"
                 } `}
               >
@@ -227,7 +227,7 @@ const ListItem = ({ children, NavLink }) => {
       <li>
         <a
           href={NavLink}
-          className="flex py-2 text-base font-medium text-dark hover:text-primary  lg:ml-10 lg:inline-flex"
+          className="flex py-2 text-base font-medium text-black hover:text-primary  lg:ml-10 lg:inline-flex"
         >
           {children}
         </a>
