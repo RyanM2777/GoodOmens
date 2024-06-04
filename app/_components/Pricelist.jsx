@@ -248,13 +248,7 @@ const Pricelist = () => {
 
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-tealGreen-100 rounded-lg  border-gray-100 shadow  xl:p-8 ">
             <h3 class="mb-4 text-2xl font-semibold">Lip Piercings</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              
-            </p>
-            <div class="flex justify-center items-baseline my-8">
-              <span class="mr-2 text-5xl font-extrabold"></span>
-              <span class="text-gray-500 dark:text-gray-400"></span>
-            </div>
+      
 
             <ul role="list" class="mb-8 space-y-4 text-left">
             <li class="flex items-center justify-between space-x-3">
@@ -479,13 +473,7 @@ const Pricelist = () => {
 
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-tealGreen-100 rounded-lg  border-gray-100 shadow  xl:p-8 ">
             <h3 class="mb-4 text-2xl font-semibold">Nose Piercings</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              
-            </p>
-            <div class="flex justify-center items-baseline my-8">
-              <span class="mr-2 text-5xl font-extrabold"></span>
-              <span class="text-gray-500 dark:text-gray-400"></span>
-            </div>
+            
 
             <ul role="list" class="mb-8 space-y-4 text-left">
               <li class="flex items-center justify-between space-x-3">
