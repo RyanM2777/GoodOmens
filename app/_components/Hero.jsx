@@ -39,7 +39,7 @@ const Hero = () => {
           </a>
         </div>
        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="/goodomens.jpg" alt="Store Front" className="rounded-lg shadow-lg" />
+          <img src="/goodomens.jpg" alt="Store Front" className="rounded-lg shadow-2xl" />
         </div>
       </div>
     </section>
