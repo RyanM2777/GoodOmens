@@ -34,15 +34,13 @@ export default function NewTeam() {
                         Each expert brings their own artistic flair and attention to detail, ensuring that every piece is not only beautiful but also safely and expertly crafted.
                     </p>
                 </div>
-                <ul role="list" className="mt-12  gap-y-12  sm:gap-y-16">
+                <ul role="list" className="mt-12 gap-y-12 sm:gap-y-16">
                     {people.map((person) => (
-                        <li key={person.name}>
-                            <div className="flex items-center gap-x-6">
+                        <li key={person.name} className="text-center">
+                            <div className="flex flex-col items-center">
                                 <img className="h-16 w-16 rounded-full object-cover" src={person.imageUrl} alt="" />
-                                <div>
-                                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                                    <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
-                                </div>
+                                <h3 className="mt-4 text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                                <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
                             </div>
                             <NewArtistInfo person={person.name} />
                         </li>
