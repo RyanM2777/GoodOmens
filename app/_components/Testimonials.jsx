@@ -259,7 +259,7 @@ export default function Example() {
 
   return (
     <section className="relative isolate overflow-hidden bg-tealGreen-200 px-6 py-24 sm:py-32 lg:px-8">
-  <div className="absolute inset-0 -z-10 bg-tealGreen-200" />
+  <div className="absolute inset-0 -z-10 bg-tealGreen-100" />
   <div className="absolute inset-0 -z-10" />
   <div className="mx-auto max-w-2xl lg:max-w-4xl">
     <img className="mx-auto h-12" src="/GoodOmens.png" alt="Good Omens Logo" />
