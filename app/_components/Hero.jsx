@@ -9,7 +9,9 @@ const Hero = () => {
             Good Omens Tattoo and Piercing
           </h1>
           <p className="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl">
-            From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.
+            Welcome to Good Omens, Dundee&#39;s Premier Tattoo & Piercing Studio!
+
+              Experience a vibrant and welcoming atmosphere at our top-rated studio in Dundee. Our talented artists and piercers are dedicated to transforming your visions into stunning works of art. Whether you&#39;re seeking a bold new tattoo, a delicate piece of body art, or a stylish piercing, we are here to provide exceptional quality and unparalleled creativity. Join us to express your individuality in a friendly and professional environment where your satisfaction and comfort are our top priorities.
           </p>
           <a
             href="#"
