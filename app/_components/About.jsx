@@ -21,7 +21,7 @@ function About() {
          From small pieces to larger projects, we cover a variety of tattoo styles and themes, with each artist having their own particular favoured style. Please check out the Artists page and look at their work to help you find the artist that is right for you.
          <div className="mt-2 flex items-center justify-center gap-x-6">
               
-              <a href="/team" className="text-sm font-bold leading-6 text-tealGreen-400">
+              <a href="/artists" className="text-sm font-bold leading-6 text-tealGreen-400">
                 Check out our artists <span aria-hidden="true">→</span>
               </a>
             </div>
