@@ -12,17 +12,15 @@ const Hero = () => {
             <div className="w-full px-4 lg:w-5/12">
               <div className="hero-content">
                 <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
-                  Kickstart Startup Website with TailGrids
+                  Good Omens Tattoo and Piercing
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
-                  With TailGrids, business and students thrive together.
-                  Business can perfectly match their staffing to changing demand
-                  throughout the dayed.
+                  Welcome to Good Omens, Dundee's Premier Tattoo & Piercing Studio! Experience a vibrant and welcoming atmosphere at our top-rated studio in Dundee. Our talented artists and piercers are dedicated to transforming your visions into stunning works of art. Whether you're seeking a bold new tattoo, a delicate piece of body art, or a stylish piercing, we are here to provide exceptional quality and unparalleled creativity. Join us to express your individuality in a friendly and professional environment where your satisfaction and comfort are our top priorities.
                 </p>
                 <ul className="flex flex-wrap items-center">
                   <li>
                     <a
-                      href="/#"
+                      href="/services"
                       className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-dark lg:px-7"
                     >
                       Get Started
@@ -30,7 +28,7 @@ const Hero = () => {
                   </li>
                   <li>
                     <a
-                      href="/#"
+                      href="/artists"
                       className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] hover:text-primary dark:text-white"
                     >
                       <span className="mr-2">
@@ -62,7 +60,7 @@ const Hero = () => {
                           />
                         </svg>
                       </span>
-                      Download App
+                      Check out our Artists
                     </a>
                   </li>
                 </ul>
@@ -96,7 +94,7 @@ const Hero = () => {
               <div className="lg:ml-auto lg:text-right">
                 <div className="relative z-10 inline-block pt-11 lg:pt-0">
                   <img
-                    src="https://cdn.tailgrids.com/1.0/assets/images/hero/hero-image-01.png"
+                    src="/goodomens.jpg"
                     alt="hero"
                     className="max-w-full lg:ml-auto"
                   />
