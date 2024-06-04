@@ -38,8 +38,8 @@ const Hero = () => {
             Speak to Us
           </a>
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="/goodomens.jpg" alt="Store Front" />
+       <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img src="/goodomens.jpg" alt="Store Front" className="rounded-lg shadow-lg" />
         </div>
       </div>
     </section>
