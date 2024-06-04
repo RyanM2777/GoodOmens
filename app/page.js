@@ -5,6 +5,7 @@ import Team from "./_components/Team"
 import Testimonials from "./_components/Testimonials"
 import Footer from './_components/Footer'
 import Faq from "./_components/FaqTattoo";
+import Hero from "./_components/Hero";
 
 export const metadata = {
   title: 'Good Omens - Tattoo & Piercing',
@@ -15,7 +16,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-    <HomeHeader />
+    <Hero />
     <Testimonials />
     <Footer />
 
