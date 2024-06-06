@@ -51,7 +51,7 @@ export function Gallery() {
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
           <div className="relative">
-            <img src={selectedImage} alt="Enlarged gallery" className="max-w-5xl max-h-5xl rounded-lg px-12" />
+            <img src={selectedImage} alt="Enlarged gallery" className="max-w-5xl max-h-5xl rounded-lg" />
             <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
           </div>
         </div>
