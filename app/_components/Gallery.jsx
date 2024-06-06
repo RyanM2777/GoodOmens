@@ -47,7 +47,6 @@ export function Gallery() {
   const closeModal = () => setSelectedImage(null);
 
   return (
-    <div className="bg-gray-800">
     <div>
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
@@ -56,9 +55,7 @@ export function Gallery() {
             <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
           </div>
         </div>
-      </div>
       )}
-      <div className="bg-gray-800">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         {data.map(({ imageLink }, index) => (
           <div key={index}>
@@ -71,7 +68,6 @@ export function Gallery() {
           </div>
         ))}
       </div>
-    </div>
       </div>
   );
 }
