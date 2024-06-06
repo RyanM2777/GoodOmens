@@ -13,22 +13,22 @@ function Gallery() {
 
     <div class="grid  grid-cols-1 gap-4 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-3">
   <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg bg-tealGreen-100"
+    <img class="object-cover object-center w-full h-10 max-w-full rounded-lg bg-tealGreen-100"
       src="/Lauren/1.jpeg"
       alt="gallery-photo" />
   </div>
   <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
+    <img class="object-cover object-center w-full h-14 max-w-full rounded-lg"
       src="/Lauren/2.jpeg"
       alt="gallery-photo" />
   </div>
   <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
+    <img class="object-cover object-center w-full h-14 max-w-full rounded-lg"
       src="/Lauren/4.jpeg"
       alt="gallery-photo" />
   </div>
   <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
+    <img class="object-cover object-center w-full h-14 max-w-full rounded-lg"
       src="/Lauren/5.jpeg"
       alt="gallery-photo" />
   </div>
