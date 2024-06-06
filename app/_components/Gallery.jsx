@@ -1,217 +1,56 @@
 import React from 'react'
 
-function Gallery() {
+export function Gallery() {
+  const data = [
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    },
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    },
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+    },
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    },
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+    },
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
+    },
+    {
+      imageLink:
+        "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg",
+    },
+    {
+      imageLink:
+        "https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg",
+    },
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1493&q=80",
+    },
+  ];
   return (
-    <>
-<div className='bg-tealGreen-100'>
-<div class=" flex items-center gap-4 bg-tealGreen-100">
-  <div class="flex-1 h-px bg-gray-300"></div>
-  <span class="text-gray-700">LAUREN&#39;S GALLERY</span>
-  <div class="flex-1 h-px bg-gray-300"></div>
-</div>
-
-
-    <div class="grid  grid-cols-1 gap-4 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-3">
-  <div>
-    <img class="object-cover object-center w-full h-16 max-w-full rounded-lg bg-tealGreen-100"
-      src="/Lauren/1.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-16 max-w-full rounded-lg shadow-2xl"
-      src="/Lauren/2.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-16 max-w-full rounded-lg shadow-2xl"
-      src="/Lauren/4.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-14 max-w-full rounded-lg shadow-2xl"
-      src="/Lauren/5.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Lauren/6.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Lauren/7.jpeg" alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Lauren/8.jpeg" alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Lauren/9.jpeg"
-      alt="gallery-photo" />
-  </div>
-</div>
-<div class=" flex items-center gap-4 bg-white">
-  <div class="flex-1 h-px bg-gray-300"></div>
-  <span class="text-gray-700">EMILY&#39;S GALLERY</span>
-  <div class="flex-1 h-px bg-gray-300"></div>
-</div>
-
-
-    <div class="grid  grid-cols-1 gap-4 bg-white sm:grid-cols-2 md:grid-cols-3">
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Emily/1.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Emily/2.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Emily/4.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Emily/5.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Emily/6.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Emily/7.jpeg" alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Emily/8.jpeg" alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Emily/9.jpeg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Emily/10.jpeg"
-      alt="gallery-photo" />
-  </div>
-</div>
-<div class=" flex items-center gap-4 bg-white">
-  <div class="flex-1 h-px bg-gray-300"></div>
-  <span class="text-gray-700">STEVEN&#39;S GALLERY</span>
-  <div class="flex-1 h-px bg-gray-300"></div>
-</div>
-
-
-    <div class="grid  grid-cols-1 gap-4 bg-white sm:grid-cols-2 md:grid-cols-3">
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Steven/1.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Steven/2.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Steven/4.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Steven/5.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Steven/6.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Steven/7.jpg" alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Steven/8.jpg" alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Steven/9.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Steven/10.jpg"
-      alt="gallery-photo" />
-  </div>
-</div>
-
-<div class=" flex items-center gap-4 bg-white">
-  <div class="flex-1 h-px bg-gray-300"></div>
-  <span class="text-gray-700">IAIN&#39;S GALLERY</span>
-  <div class="flex-1 h-px bg-gray-300"></div>
-</div>
-
-
-    <div class="grid  grid-cols-1 gap-4 bg-white sm:grid-cols-2 md:grid-cols-3">
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Iain/1.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Iain/2.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Iain/3.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Iain/4.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Iain/5.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Iain/6.jpg" 
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Iain/7.jpg" 
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover object-center w-full h-45 max-w-full rounded-lg"
-      src="/Iain/8.jpg"
-      alt="gallery-photo" />
-  </div>
-  <div>
-    <img class="object-cover  object-center w-full h-45 max-w-full rounded-lg"
-      src="/Iain/9.jpg"
-      alt="gallery-photo" />
-  </div>
-</div>
-</div>
-    </>
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      {data.map(({ imageLink }, index) => (
+        <div key={index}>
+          <img
+            className="h-40 w-full max-w-full rounded-lg object-cover object-center"
+            src={imageLink}
+            alt="gallery-photo"
+          />
+        </div>
+      ))}
+    </div>
   )
 }
 
