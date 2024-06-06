@@ -60,7 +60,7 @@ export function Gallery() {
         {data.map(({ imageLink }, index) => (
           <div key={index}>
             <img
-              className="h-40 w-full max-w-5xl rounded-lg object-cover object-center cursor-pointer px-12"
+              className="h-40 w-full max-w-5xl rounded-lg object-cover object-center cursor-pointer"
               src={imageLink}
               alt="gallery-photo"
               onClick={() => handleImageClick(imageLink)}
