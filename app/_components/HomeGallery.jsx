@@ -32,7 +32,7 @@ export function HomeGallery() {
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
           <div className="relative">
-            <img src={selectedImage} alt="Enlarged gallery" className="max-w-3xl max-h-96 rounded-lg" />
+            <img src={selectedImage} alt="Enlarged gallery" className="max-w-3xl max-h-full rounded-lg" />
             <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
           </div>
         </div>
@@ -41,7 +41,7 @@ export function HomeGallery() {
         {data.map(({ imageLink }, index) => (
           <div key={index}>
             <img
-              className="h-full w-full max-w-3xl rounded-lg object-cover object-center cursor-pointer"
+              className="h-80 w-full max-w-3xl rounded-lg object-cover object-center cursor-pointer"
               src={imageLink}
               alt="gallery-photo"
               onClick={() => handleImageClick(imageLink)}
