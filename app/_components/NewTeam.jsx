@@ -50,12 +50,6 @@ const people = [
 ];
 
 export default function NewTeam() {
-    const [showGallery, setShowGallery] = useState(false);
-
-    const handleToggleGallery = () => {
-        setShowGallery(!showGallery);
-    };
-
     return (
         <div className="bg-tealGreen-200 py-24 sm:py-32">
             <div className="mx-auto max-w-8xl px-6 lg:px-8">
@@ -65,16 +59,11 @@ export default function NewTeam() {
                         Each expert brings their own artistic flair and attention to detail, ensuring that every piece is not only beautiful but also safely and expertly crafted.
                     </p>
                 </div>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleToggleGallery}>
-                    {showGallery ? 'Hide Gallery' : 'Show Gallery'}
-                </button>
-                {showGallery && (
-                    <ul role="list" className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 bg-gray-800">
-                        {people.map((person) => (
-                            <PersonItem key={person.name} person={person} />
-                        ))}
-                    </ul>
-                )}
+                <ul role="list" className="mt-12">
+                    {people.map((person) => (
+                        <PersonItem key={person.name} person={person} />
+                    ))}
+                </ul>
             </div>
         </div>
     );
@@ -108,7 +97,8 @@ function PersonItem({ person }) {
                         <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
                     </div>
                 </div>
-            )}
+           
+            </div>
         </li>
     );
 }
