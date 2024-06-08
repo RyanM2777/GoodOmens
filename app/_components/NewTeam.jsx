@@ -59,20 +59,24 @@ export default function NewTeam() {
                         Each expert brings their own artistic flair and attention to detail, ensuring that every piece is not only beautiful but also safely and expertly crafted.
                     </p>
                 </div>
-                <ul role="list" className="mt-12  gap-y-12  sm:gap-y-16">
+                <ul role="list" className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-y-12  sm:gap-y-16">
                     {people.map((person) => (
                         <li key={person.name}>
-                            <div className="flex items-center gap-x-6">
+                            <div className="flex gap-6">
                                 <div className="flex-none">
                                     <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
                                 </div>
                                 <div className="flex-auto">
                                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                     <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
-                                    <p className="text-sm text-gray-700 mt-4">{person.bio}</p>
                                 </div>
                             </div>
-                            <NewArtistInfo person={person} />
+                            <div className="mt-4">
+                                <p className="text-base leading-6 text-gray-700">{person.bio}</p>
+                            </div>
+                            <div className="mt-4">
+                                <NewArtistInfo person={person} />
+                            </div>
                         </li>
                     ))}
                 </ul>
@@ -94,58 +98,32 @@ function NewArtistInfo({ person }) {
     };
 
     return (
-        <div className="bg-tealGreen-200">
-            <style jsx>{`
-                .overlay {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100vw;
-                    height: 100vh;
-                    background: rgba(0, 0, 0, 0.5);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    z-index: 1000;
-                }
-                .enlarged {
-                    max-width: calc(4.5rem * 16);
-                    max-height: 90vh;
-                    width: auto;
-                    height: auto;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                }
-                .gallery-image {
-                    cursor: pointer;
-                }
-            `}</style>
-            <div className="flex items-center gap-4 bg-tealGreen-200 mb-4 cursor-pointer" onClick={toggleGallery}>
-                <div className="flex-none">
-                    <span className="text-gray-700">{showGallery ? 'Hide Gallery' : 'Show Gallery'} &#8595;</span>
-                </div>
+        <div className="mt-4">
+            <div className="flex items-center justify-center">
+                <button className="text-indigo-600 font-semibold focus:outline-none" onClick={toggleGallery}>
+                    {showGallery ? 'Hide Gallery' : 'Show Gallery'}
+                </button>
+                <div className="flex-auto border-t border-gray-300 ml-4"></div>
             </div>
             {showGallery && (
-                <div className="col-span-2">
-                    <div className="grid grid-cols-1 gap-4 mt-3 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-4">
-                        {person.images.map((image, index) => (
-                            <div key={index}>
-                                <img
-                                    className={`object-cover object-center w-full h-80 max-w-full rounded-lg gallery-image ${enlargedImage === image ? 'enlarged' : ''}`}
-                                    src={image}
-                                    alt="gallery-photo"
-                                    onClick={() => toggleEnlargedImage(image)}
-                                />
-                            </div>
-                        ))}
-                    </div>
+                <div className="grid grid-cols-1 gap-4 mt-3 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-4">
+                    {person.images.map((image, index) => (
+                        <div key={index}>
+                            <img
+                                className={`object-cover object-center w-full h-80 max-w-full rounded-lg gallery-image ${enlargedImage === image ? 'enlarged' : ''}`}
+                                src={image}
+                                alt="gallery-photo"
+                                onClick={() => toggleEnlargedImage(image)}
+                            />
+                        </div>
+                    ))}
                 </div>
             )}
             {enlargedImage && (
-                <div className="overlay" onClick={() => setEnlargedImage(null)}>
-                    <img className="enlarged" src={enlargedImage} alt="enlarged-photo" />
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50" onClick={() => setEnlargedImage(null)}>
+                    <img className="max-h-full max-w-full" src={enlargedImage} alt="enlarged-photo" />
                 </div>
             )}
         </div>
     );
 }
-
