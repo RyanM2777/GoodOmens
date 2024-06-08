@@ -6,6 +6,7 @@ import Testimonials from "./_components/Testimonials"
 import Footer from './_components/Footer'
 import Faq from "./_components/FaqTattoo";
 import Hero from "./_components/NewHeader";
+import HomeGallery from "./_components/HomeGallery";
 
 export const metadata = {
   title: 'Good Omens - Tattoo & Piercing',
@@ -18,6 +19,7 @@ export default function Home() {
     <>
     <Navbar />
     <Hero />
+    <HomeGallery />
     <Testimonials />
     <Footer />
 
