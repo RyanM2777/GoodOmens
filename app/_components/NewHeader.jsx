@@ -12,11 +12,11 @@ function NewHeader() {
   }}
 >
   <div className="flex flex-col items-center justify-center mx-auto max-w-screen-xl px-4 py-32 lg:h-screen">
-    <div className="text-center">
-      <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
+    <div className="text-center max-w-full px-2">
+      <h1 className="text-2xl font-extrabold sm:text-4xl md:text-5xl text-white">
         Welcome to
       </h1>
-      <strong className="font-extrabold text-white text-3xl sm:text-5xl whitespace-nowrap">
+      <strong className="font-extrabold text-white text-2xl sm:text-4xl md:text-5xl whitespace-nowrap">
         Good Omens Tattoo and Piercing
       </strong>
     </div>
