@@ -116,12 +116,12 @@ function PersonItem({ person }) {
             </div>
             {selectedImage && (
                 <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50" onClick={closeImage}>
-                    <div className="relative max-w-screen-lg max-h-96 overflow-hidden">
+                    <div className="relative max-w-screen-lg max-h-screen overflow-hidden">
                         <button className="absolute top-2 right-2 text-white text-2xl bg-black bg-opacity-50 rounded-full p-2" onClick={closeImage}>×</button>
-                        <img className="w-full h-full object-contain" src={selectedImage} alt="SelectedImage" />
-</div>
-</div>
-)}
-</li>
-);
+                        <img className="w-full h-full object-contain" src={selectedImage} alt="Selected Image" />
+                    </div>
+                </div>
+            )}
+        </li>
+    );
 }
