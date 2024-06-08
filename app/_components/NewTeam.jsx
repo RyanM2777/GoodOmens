@@ -50,9 +50,11 @@ const people = [
 ];
 
 export default function NewTeam() {
-    const [selectedImage, setSelectedImage] = useState(null);
-    const handleImageClick = (src) => setSelectedImage(src);
-    const closeModal = () => setSelectedImage(null);
+    const [showGallery, setShowGallery] = useState(false);
+
+    const handleToggleGallery = () => {
+        setShowGallery(!showGallery);
+    };
 
     return (
         <div className="bg-tealGreen-200 py-24 sm:py-32">
@@ -63,25 +65,27 @@ export default function NewTeam() {
                         Each expert brings their own artistic flair and attention to detail, ensuring that every piece is not only beautiful but also safely and expertly crafted.
                     </p>
                 </div>
-                <ul role="list" className="mt-12">
-                    {people.map((person) => (
-                        <PersonItem key={person.name} person={person} handleImageClick={handleImageClick} />
-                    ))}
-                </ul>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleToggleGallery}>
+                    {showGallery ? 'Hide Gallery' : 'Show Gallery'}
+                </button>
+                {showGallery && (
+                    <ul role="list" className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 bg-gray-800">
+                        {people.map((person) => (
+                            <PersonItem key={person.name} person={person} />
+                        ))}
+                    </ul>
+                )}
             </div>
-            {selectedImage && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
-                    <div className="relative">
-                        <img src={selectedImage} alt="Enlarged gallery" className="max-w-4xl max-h-3xl rounded-lg" />
-                        <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
-                    </div>
-                </div>
-            )}
         </div>
     );
 }
 
-function PersonItem({ person, handleImageClick }) {
+function PersonItem({ person }) {
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const handleImageClick = (src) => setSelectedImage(src);
+    const closeModal = () => setSelectedImage(null);
+
     return (
         <li className="py-6 px-8 bg-tealGreen-200 rounded-lg shadow-md">
             <div className="flex items-center gap-8">
@@ -97,6 +101,14 @@ function PersonItem({ person, handleImageClick }) {
                     </div>
                 </div>
             </div>
+            {selectedImage && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
+                    <div className="relative">
+                        <img src={selectedImage} alt="Enlarged gallery" className="max-w-4xl max-h-3xl rounded-lg" />
+                        <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
+                    </div>
+                </div>
+            )}
         </li>
     );
 }
