@@ -5,19 +5,19 @@ export function HomeGallery() {
   const data = [
     {
       imageLink:
-        "https://www.dreamalityinteractive.com/TrainStationTease2.png",
+        "/Emily/1.jpeg",
     },
     {
       imageLink:
-        "https://www.dreamalityinteractive.com/TrainStationTease1.png",
+        "/Lauren/5.jpeg",
     },
     {
       imageLink:
-        "https://www.dreamalityinteractive.com/Airport1.png",
+        "/Steven/7.jpeg",
     },
     {
       imageLink:
-        "https://www.dreamalityinteractive.com/Airport1.png",
+        "/Iain/9.jpeg",
     },
     
   ];
