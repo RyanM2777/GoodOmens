@@ -27,7 +27,7 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Good Omens</span>
-            <img className="h-26 w-auto" src="/GoodOmens.png" alt="Good Omens Logo" />
+            <img className="h-20 w-auto" src="/GoodOmens.png" alt="Good Omens Logo" />
           </a>
         </div>
         <div className="flex lg:hidden">
