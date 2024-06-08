@@ -11,28 +11,16 @@ export default function Example() {
   const [agreed, setAgreed] = useState(false)
 
   return (
-    <div className="isolate bg-tealGreen-200 px-6 py-24 sm:py-32 lg:px-8">
-      <div
-        className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-        aria-hidden="true"
-      >
-        <div
-          className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#003333] to-[#339999] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
-          style={{
-            clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-        />
-      </div>
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get in Touch</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
-          Get in touch regarding: booking, questions & complaints
-        </p>
-      </div>
-      <form action="https://formsubmit.co/Hello@goodomenstattoo.co.uk" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
-        
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+    <div className="isolate bg-tealGreen-200 px-6 py-24 sm:py-32 lg:px-8 flex">
+      <div className="w-full lg:w-1/2 mx-auto">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get in Touch</h2>
+          <p className="mt-2 text-lg leading-8 text-gray-600">
+            Get in touch regarding: booking, questions & complaints
+          </p>
+        </div>
+        <form action="https://formsubmit.co/Hello@goodomenstattoo.co.uk" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -194,7 +182,11 @@ export default function Example() {
             Let&#39;s talk
           </button>
         </div>
-      </form>
+          <div className="w-full lg:w-1/2 mx-auto">
+        {/* Google Maps iframe goes here */}
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.4194837104524!2d-2.971106322771466!3d56.46053403725806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865d723d71d5ad%3A0x94219622fff272f!2sGood%20Omens%20Tattoo!5e0!3m2!1sen!2suk!4v1717858518344!5m2!1sen!2suk" width="600" height="450" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   )
 }
+        </form>
