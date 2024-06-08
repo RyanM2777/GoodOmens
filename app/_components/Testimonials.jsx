@@ -264,7 +264,7 @@ export default function Example() {
   <div className="absolute inset-0 -z-10" />
   <div className="mx-auto max-w-2xl lg:max-w-4xl">
     <img className="mx-auto h-24 mt-6" src="/GoodOmens.png" alt="Good Omens Logo" />
-      <h2 className="text-3xl font-bold text-center text-black bg-tealGreen-200">What our customers say</h2>
+      <h2 className="text-3xl font-bold text-center text-black"></h2>
     <figure className="mt-10">
       <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
         <p>{currentReview.text}</p>
