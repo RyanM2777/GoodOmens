@@ -28,10 +28,10 @@ export function HomeGallery() {
   const closeModal = () => setSelectedImage(null);
 
   return (
-    <div className="bg-gray-800">
+    <div className="bg-tealGreen-400">
       <div className="text-center py-8">
-        <h2 className="text-3xl font-extrabold text-white">
-          Welcome to Our Gallery
+        <h2 className="text-3xl font-bold text-white">
+          Some of our work
         </h2>
       </div>
       {selectedImage && (
