@@ -84,7 +84,7 @@ function Footer() {
       </li>
     </ul>
    <p className="mx-auto mt-6 max-w-lg text-center leading-relaxed text-gray-500">
-    Website designed by <a href="https://rmwebdesigns.co.uk">RM Web Designs</a>
+    Website designed by <a href="https://rmwebdesigns.co.uk" className="texy-gray-800 underline">RM Web Designs</a>
     </p>
 
   </div>
