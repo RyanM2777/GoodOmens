@@ -41,8 +41,10 @@ export default function NewTeam() {
                     {people.map((person) => (
                         <li key={person.name}>
                             <div className="flex items-center gap-x-6">
-                                <img className="h-16 w-16 rounded-full object-cover" src={person.imageUrl} alt="" />
-                                <div>
+                                <div className="flex-none">
+                                    <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
+                                </div>
+                                <div className="flex-auto">
                                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                     <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
                                 </div>
@@ -125,20 +127,20 @@ function NewArtistInfo({ person }) {
                     z-index: 1000;
                 }
                 .enlarged {
-      max-width: calc(4.5rem * 16);
-      max-height: 90vh;
-      width: auto;
-      height: auto;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+                    max-width: calc(4.5rem * 16);
+                    max-height: 90vh;
+                    width: auto;
+                    height: auto;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
                 .gallery-image {
                     cursor: pointer;
                 }
             `}</style>
             <div className="flex items-center gap-4 bg-tealGreen-200 mb-4 cursor-pointer" onClick={toggleDetails}>
-                <div className="flex-1 h-px bg-gray-300"></div>
-                <span className="text-gray-700">{person} &#8595;</span>
-                <div className="flex-1 h-px bg-gray-300"></div>
+                <div className="flex-none">
+                    <span className="text-gray-700">{person} &#8595;</span>
+                </div>
             </div>
             {showDetails && (
                 <div className="col-span-2">
@@ -174,3 +176,4 @@ function NewArtistInfo({ person }) {
         </div>
     );
 }
+
