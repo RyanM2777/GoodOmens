@@ -61,7 +61,7 @@ export default function NewTeam() {
                 </div>
                 <ul role="list" className="mt-12">
                     {people.map((person) => (
-                        <li key={person.name} className="flex items-center gap-6 py-6 px-8 bg-tealGreen-200 rounded-lg shadow-md">
+                        <li key={person.name} className="flex items-center gap-8 py-6 px-8 bg-tealGreen-200 rounded-lg shadow-3xl">
                             <div className="flex-none">
                                 <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
                             </div>
@@ -69,7 +69,7 @@ export default function NewTeam() {
                                 <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                 <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
                             </div>
-                            <div className="flex-auto bg-white rounded-lg p-6 max-w-md">
+                            <div className="flex-auto bg-tealGreen-200 rounded-lg p-6 max-w-md">
                                 <p className="text-base leading-6 text-gray-700">{person.bio}</p>
                             </div>
                         </li>
