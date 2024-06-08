@@ -13,11 +13,11 @@ export function HomeGallery() {
     },
     {
       imageLink:
-        "/Steven/7.jpeg",
+        "/Steven/7.jpg",
     },
     {
       imageLink:
-        "/Iain/9.jpeg",
+        "/Iain/3.jpg",
     },
     
   ];
