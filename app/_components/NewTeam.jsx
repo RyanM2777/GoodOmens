@@ -59,9 +59,9 @@ export default function NewTeam() {
                         Each expert brings their own artistic flair and attention to detail, ensuring that every piece is not only beautiful but also safely and expertly crafted.
                     </p>
                 </div>
-                <ul role="list" className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-y-12  sm:gap-y-16">
+                <ul role="list" className="mt-12">
                     {people.map((person) => (
-                        <li key={person.name} className="flex gap-6">
+                        <li key={person.name} className="flex items-center gap-6">
                             <div className="flex-none">
                                 <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
                             </div>
