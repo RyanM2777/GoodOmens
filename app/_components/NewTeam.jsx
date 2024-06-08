@@ -69,7 +69,7 @@ export default function NewTeam() {
                                 <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                 <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
                             </div>
-                                                    <div className="flex-auto pl-6">
+                            <div className="flex-auto bg-gray-100 rounded-lg p-6">
                                 <p className="text-base leading-6 text-gray-700">{person.bio}</p>
                             </div>
                         </li>
