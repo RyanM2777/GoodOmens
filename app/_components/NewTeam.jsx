@@ -96,27 +96,19 @@ function PersonItem({ person }) {
                     </div>
                 </div>
             </div>
-            <div className="border-t mt-6 pt-6">
-                <div className="flex items-center justify-center">
-                    <button className="text-lg font-bold tracking-tight text-gray-700 border-b-2 border-gray-300" onClick={toggleGallery}>
-                        {showGallery ? 'Hide Gallery' : 'Show Gallery'}
-                    </button>
-                </div>
-                {showGallery && (
-                    <div className="grid grid-cols-3 gap-4 mt-4">
-                        {person.images.map((image, index) => (
-                            <img key={index} className="w-full h-32 object-cover rounded-lg cursor-pointer" src={image} alt={`Gallery ${index + 1}`} onClick={() => toggleEnlargedImage(image)} />
-                        ))}
-                    </div>
-                )}
-            </div>
             {enlargedImage && (
                 <div className="overlay" onClick={() => setEnlargedImage(null)}>
                     <img className="enlarged" src={enlargedImage} alt="enlarged-photo" />
                 </div>
             )}
+            <div className={`modal ${showGallery ? 'show' : ''}`}>
+                <div className="modal-content">
+                    <span className="close" onClick={toggleGallery}>&times;</span>
+                    {person.images.map((image, index) => (
+                        <img key={index} className="modal-image" src={image} alt={`Gallery ${index + 1}`} onClick={() => toggleEnlargedImage(image)} />
+                    ))}
+                </div>
+            </div>
         </li>
     );
 }
-
-
