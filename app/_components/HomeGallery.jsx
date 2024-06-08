@@ -29,6 +29,11 @@ export function HomeGallery() {
 
   return (
     <div className="bg-gray-800">
+      <div className="text-center py-8">
+        <h2 className="text-3xl font-extrabold text-white">
+          Welcome to Our Gallery
+        </h2>
+      </div>
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
           <div className="relative">
@@ -49,7 +54,7 @@ export function HomeGallery() {
           </div>
         ))}
       </div>
-      </div>
+    </div>
   );
 }
 
