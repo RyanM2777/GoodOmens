@@ -258,11 +258,12 @@ export default function Example() {
   const currentReview = reviews[currentReviewIndex];
 
   return (
-    <section className="relative isolate overflow-hidden bg-tealGreen-200 px-6 py-24 sm:py-32 lg:px-8">
+    <div className="relative isolate overflow-hidden bg-tealGreen-200 px-6 py-24 sm:py-32 lg:px-8">
+  <h2 className="text-3xl font-extrabold text-center text-gray-900">What our customers say</h2>
   <div className="absolute inset-0 -z-10 bg-tealGreen-100" />
   <div className="absolute inset-0 -z-10" />
   <div className="mx-auto max-w-2xl lg:max-w-4xl">
-    <img className="mx-auto h-12" src="/GoodOmens.png" alt="Good Omens Logo" />
+    <img className="mx-auto h-12 mt-6" src="/GoodOmens.png" alt="Good Omens Logo" />
     <figure className="mt-10">
       <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
         <p>{currentReview.text}</p>
@@ -278,6 +279,6 @@ export default function Example() {
       </figcaption>
     </figure>
   </div>
-</section>
+</div>
   );
 }
