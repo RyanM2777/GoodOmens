@@ -6,7 +6,7 @@ function About() {
     <div className="mx-auto  px-4 max-w-screen-xl py-32 lg:flex  lg:items-center">
     <div className="mx-auto mx-15 lg:mx-46 sm:mx-1 text-center">
         <h1
-          className="bg-gradient-to-r from-tealGreen-500 to-tealGreen-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+          className="text-white text-3xl font-extrabold text-transparent sm:text-5xl"
         >
           About Us <br />
   
