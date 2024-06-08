@@ -130,7 +130,7 @@ function NewArtistInfo({ person }) {
                     cursor: pointer;
                 }
             `}</style>
-            <div className="flex items-center gap-4 bg-tealGreen-100 mb-4 cursor-pointer" onClick={toggleDetails}>
+            <div className="flex items-center gap-4 bg-tealGreen-200 mb-4 cursor-pointer" onClick={toggleDetails}>
                 <div className="flex-1 h-px bg-gray-300"></div>
                 <span className="text-gray-700">{person} &#8595;</span>
                 <div className="flex-1 h-px bg-gray-300"></div>
