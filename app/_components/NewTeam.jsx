@@ -13,7 +13,6 @@ const people = [
             '/Lauren/8.jpeg', '/Lauren/9.jpeg'
         ]
     },
-
     {
         name: 'Iain',
         role: '@tattoosbyhank1981',
@@ -51,17 +50,17 @@ const people = [
 
 export default function NewTeam() {
     return (
-        <div className="bg-tealGreen-200 py-24 sm:py-32">
-            <div className="mx-auto max-w-8xl px-6 lg:px-8">
+        <div className="bg-tealGreen-200 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20">
+            <div className="mx-auto max-w-8xl px-4 sm:px-6 md:px-8">
                 <div className="text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet the Artists</h2>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                    <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Meet the Artists</h2>
+                    <p className="mt-2 sm:mt-4 text-base sm:text-lg leading-7 text-gray-600">
                         Each expert brings their own artistic flair and attention to detail, ensuring that every piece is not only beautiful but also safely and expertly crafted.
                     </p>
                 </div>
-                <ul role="list" className="mt-12">
-                    {people.map((person) => (
-                        <PersonItem key={person.name} person={person} />
+                <ul role="list" className="mt-8 sm:mt-10">
+                    {people.map((person, index) => (
+                        <PersonItem key={index} person={person} />
                     ))}
                 </ul>
             </div>
@@ -86,37 +85,37 @@ function PersonItem({ person }) {
     };
 
     return (
-        <li className="py-6 px-8 bg-tealGreen-200 rounded-lg shadow-md">
-            <div className="flex items-center gap-8">
+        <li className="py-4 sm:py-6 px-6 sm:px-8 bg-tealGreen-200 rounded-lg shadow-md">
+            <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 sm:gap-8">
                 <div className="flex-none">
-                    <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
+                    <img className="w-24 sm:w-32 h-24 sm:h-32 rounded-full object-cover" src={person.imageUrl} alt={`${person.name} profile`} />
                 </div>
-                <div className="flex-auto">
-                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                    <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
-                    <div className="border-t mt-4"></div>
-                    <div className="mt-4">
-                        <p className="text-base leading-6 text-gray-700">{person.bio}</p>
+                <div className="flex-auto sm:w-3/4">
+                    <h3 className="text-base sm:text-lg font-semibold leading-6 sm:leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                    <p className="text-sm sm:text-base font-semibold leading-5 sm:leading-6 text-indigo-600">{person.role}</p>
+                    <div className="border-t mt-2 sm:mt-4"></div>
+                    <div className="mt-2 sm:mt-4">
+                        <p className="text-sm sm:text-base leading-6 sm:leading-7 text-gray-700">{person.bio}</p>
                     </div>
                 </div>
             </div>
-            <div className="border-t mt-6 pt-6">
+            <div className="border-t mt-4 pt-4">
                 <div className="flex items-center justify-center">
-                    <button className="text-lg font-bold tracking-tight text-gray-700 border-b-2 border-gray-300" onClick={toggleGallery}>
+                    <button className="text-sm sm:text-base font-bold tracking-tight text-gray-700 border-b-2 border-gray-300" onClick={toggleGallery}>
                         {showGallery ? 'Hide Gallery' : 'Show Gallery'}
                     </button>
                 </div>
                 {showGallery && (
-                    <div className="grid grid-cols-3 gap-4 mt-4">
+                    <div className="grid                     grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                         {person.images.map((image, index) => (
-                            <img key={index} className="w-full h-32 object-cover rounded-lg cursor-pointer" src={image} alt={`Gallery ${index + 1}`} onClick={() => openImage(image)} />
+                            <img key={index} className="w-full h-20 sm:h-24 md:h-28 lg:h-32 xl:h-40 object-cover rounded-lg cursor-pointer" src={image} alt={`Gallery ${index + 1}`} onClick={() => openImage(image)} />
                         ))}
                     </div>
                 )}
             </div>
             {selectedImage && (
                 <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50" onClick={closeImage}>
-                    <div className="relative max-w-screen-lg max-h-screen overflow-hidden">
+                    <div className="relative max-w-full max-h-full overflow-hidden">
                         <button className="absolute top-2 right-2 text-white text-2xl bg-black bg-opacity-50 rounded-full p-2" onClick={closeImage}>×</button>
                         <img className="w-full h-full object-contain" src={selectedImage} alt="Selected Image" />
                     </div>
@@ -125,3 +124,5 @@ function PersonItem({ person }) {
         </li>
     );
 }
+
+
