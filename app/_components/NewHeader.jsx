@@ -11,11 +11,11 @@ function NewHeader() {
     backgroundRepeat: "no-repeat",
   }}
 >
-  <div className="mx-auto max-w-screen-2xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
-    <div className="mx-auto max-w-2xl text-center">
+  <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+    <div className="mx-auto max-w-xl text-center">
       <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
         Welcome to
-        <strong className="font-extrabold text-white sm:block"> Good Omens Tattoo and Piercing </strong>
+        <strong className="font-extrabold text-white sm:block whitespace-nowrap"> Good Omens Tattoo and Piercing </strong>
       </h1>
     </div>
   </div>
@@ -28,6 +28,7 @@ function NewHeader() {
     </p>
   </div>
 </section>
+
 
 
   )
