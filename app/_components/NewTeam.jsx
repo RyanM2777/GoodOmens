@@ -50,6 +50,10 @@ const people = [
 ];
 
 export default function NewTeam() {
+    const [selectedImage, setSelectedImage] = useState(null);
+    const handleImageClick = (src) => setSelectedImage(src);
+    const closeModal = () => setSelectedImage(null);
+
     return (
         <div className="bg-tealGreen-200 py-24 sm:py-32">
             <div className="mx-auto max-w-8xl px-6 lg:px-8">
@@ -61,28 +65,28 @@ export default function NewTeam() {
                 </div>
                 <ul role="list" className="mt-12">
                     {people.map((person) => (
-                        <PersonItem key={person.name} person={person} />
+                        <PersonItem key={person.name} person={person} handleImageClick={handleImageClick} />
                     ))}
                 </ul>
             </div>
+            {selectedImage && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
+                    <div className="relative">
+                        <img src={selectedImage} alt="Enlarged gallery" className="max-w-4xl max-h-3xl rounded-lg" />
+                        <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
 
-function PersonItem({ person }) {
-    const [showGallery, setShowGallery] = useState(false);
-
-
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleImageClick = (src) => setSelectedImage(src);
-  const closeModal = () => setSelectedImage(null);
-
+function PersonItem({ person, handleImageClick }) {
     return (
         <li className="py-6 px-8 bg-tealGreen-200 rounded-lg shadow-md">
             <div className="flex items-center gap-8">
                 <div className="flex-none">
-                    <img className="h-64 w-64 rounded-full object-cover cursor-pointer" src={person.imageUrl} alt="" onClick={() => toggleEnlargedImage(person.imageUrl)} />
+                    <img className="h-64 w-64 rounded-full object-cover cursor-pointer" src={person.imageUrl} alt="" onClick={() => handleImageClick(person.imageUrl)} />
                 </div>
                 <div className="flex-auto">
                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
@@ -92,15 +96,6 @@ function PersonItem({ person }) {
                         <p className="text-base leading-6 text-gray-700">{person.bio}</p>
                     </div>
                 </div>
-            </div>
-           {selectedImage && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
-          <div className="relative">
-            <img src={selectedImage} alt="Enlarged gallery" className="max-w-4xl max-h-3xl rounded-lg" />
-            <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
-          </div>
-        </div>
-      )}
             </div>
         </li>
     );
