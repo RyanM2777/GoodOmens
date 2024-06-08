@@ -5,7 +5,7 @@ import Team from "./_components/Team"
 import Testimonials from "./_components/Testimonials"
 import Footer from './_components/Footer'
 import Faq from "./_components/FaqTattoo";
-import Hero from "./_components/Hero";
+import Hero from "./_components/NewHeader";
 
 export const metadata = {
   title: 'Good Omens - Tattoo & Piercing',
