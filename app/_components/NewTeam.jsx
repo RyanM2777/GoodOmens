@@ -92,7 +92,11 @@ function PersonItem({ person }) {
                 </div>
             </div>
             <div className="border-t mt-6 pt-6">
-                <button className="text-lg font-bold tracking-tight text-gray-900" onClick={toggleGallery}>Show Gallery</button>
+                <div className="flex items-center justify-center">
+                    <button className="text-lg font-bold tracking-tight text-gray-700" onClick={toggleGallery}>
+                        {showGallery ? 'Hide Gallery' : 'Show Gallery'}
+                    </button>
+                </div>
                 {showGallery && (
                     <div className="grid grid-cols-3 gap-4 mt-4">
                         {person.images.map((image, index) => (
