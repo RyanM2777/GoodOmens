@@ -104,7 +104,7 @@ function PersonItem({ person }) {
                 </div>
                 {showGallery && (
                     <div className="grid grid-cols-3 gap-4 mt-4">
-                        {person                        .images.map((image, index) => (
+                        {person.images.map((image, index) => (
                             <img key={index} className="w-full h-32 object-cover rounded-lg cursor-pointer" src={image} alt={`Gallery ${index + 1}`} onClick={() => toggleEnlargedImage(image)} />
                         ))}
                     </div>
@@ -118,4 +118,5 @@ function PersonItem({ person }) {
         </li>
     );
 }
+
 
