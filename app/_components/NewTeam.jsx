@@ -105,7 +105,7 @@ function NewArtistInfo({ person }) {
     };
 
     return (
-        <div className="bg-tealGreen-100">
+        <div className="bg-tealGreen-200">
             <style jsx>{`
                 .overlay {
                     position: fixed;
