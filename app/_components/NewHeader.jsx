@@ -2,7 +2,7 @@ import React from 'react'
 
 function NewHeader() {
   return (
-   <section
+  <section
   className="text-black"
   style={{
     backgroundImage: "url('/goodomens.jpg')",
@@ -30,6 +30,7 @@ function NewHeader() {
     </p>
   </div>
 </section>
+
 
 
 
