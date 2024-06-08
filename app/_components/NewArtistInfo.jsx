@@ -13,9 +13,9 @@ function NewArtistInfo() {
   const toggleIainDetails = () => setShowIainDetails(prevState => !prevState);
 
   return (
-    <section className="bg-tealGreen-100">
+    <section className="bg-tealGreen-200">
       <div
-        className="flex items-center gap-4 bg-tealGreen-100 mb-4 cursor-pointer"
+        className="flex items-center gap-4 bg-tealGreen-200 mb-4 cursor-pointer"
         onClick={toggleLaurenDetails}
       >
         <div className="flex-1 h-px bg-gray-300"></div>
@@ -40,11 +40,11 @@ function NewArtistInfo() {
               </dd>
             </div>
           </dl>
-          <div className="grid grid-cols-1 gap-4 mt-3 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 mt-3 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-4">
             {["1.jpeg", "2.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg"].map((src, index) => (
               <div key={index}>
                 <img
-                  className="object-cover object-center w-full h-45 max-w-full rounded-lg bg-tealGreen-100"
+                  className="object-cover object-center w-full h-80 max-w-full rounded-lg bg-tealGreen-200"
                   src={`/Lauren/${src}`}
                   alt="gallery-photo"
                 />
@@ -54,7 +54,7 @@ function NewArtistInfo() {
         </div>
       )}
 
-      <div className="flex items-center gap-4 bg-tealGreen-100 mb-4 cursor-pointer" onClick={toggleEmilyDetails}>
+      <div className="flex items-center gap-4 bg-tealGreen-200 mb-4 cursor-pointer" onClick={toggleEmilyDetails}>
         <div className="flex-1 h-px bg-gray-300"></div>
         <span className="text-gray-700">Emily &#8595;</span>
         <div className="flex-1 h-px bg-gray-300"></div>
@@ -77,11 +77,11 @@ function NewArtistInfo() {
               </dd>
             </div>
           </dl>
-          <div className="grid mt-3 grid-cols-1 gap-4 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid mt-3 grid-cols-1 gap-4 bg-tealGreen-200 sm:grid-cols-2 md:grid-cols-4">
             {["1.jpeg", "2.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpeg"].map((src, index) => (
               <div key={index}>
                 <img
-                  className="object-cover object-center w-full h-45 max-w-full rounded-lg"
+                  className="object-cover object-center w-full h-80 max-w-full rounded-lg"
                   src={`/Emily/${src}`}
                   alt="gallery-photo"
                 />
@@ -91,7 +91,7 @@ function NewArtistInfo() {
         </div>
       )}
 
-      <div className="flex items-center gap-4 bg-tealGreen-100 mb-4 cursor-pointer" onClick={toggleStevenDetails}>
+      <div className="flex items-center gap-4 bg-tealGreen-200 mb-4 cursor-pointer" onClick={toggleStevenDetails}>
         <div className="flex-1 h-px bg-gray-300"></div>
         <span className="text-gray-700">Steven &#8595;</span>
         <div className="flex-1 h-px bg-gray-300"></div>
@@ -114,11 +114,11 @@ function NewArtistInfo() {
               </dd>
             </div>
           </dl>
-          <div className="grid mt-3 grid-cols-1 gap-4 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid mt-3 grid-cols-1 gap-4 bg-tealGreen-200 sm:grid-cols-2 md:grid-cols-4">
             {["1.jpg", "2.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg"].map((src, index) => (
               <div key={index}>
                 <img
-                  className="object-cover object-center w-full h-45 max-w-full rounded-lg"
+                  className="object-cover object-center w-full h-80 max-w-full rounded-lg"
                   src={`/Steven/${src}`}
                   alt="gallery-photo"
                 />
@@ -128,7 +128,7 @@ function NewArtistInfo() {
         </div>
       )}
 
-      <div className="flex items-center gap-4 bg-tealGreen-100 cursor-pointer" onClick={toggleIainDetails}>
+      <div className="flex items-center gap-4 bg-tealGreen-200 cursor-pointer" onClick={toggleIainDetails}>
         <div className="flex-1 h-px bg-gray-300"></div>
         <span className="text-gray-700">Iain &#8595;</span>
         <div className="flex-1 h-px bg-gray-300"></div>
@@ -151,11 +151,11 @@ function NewArtistInfo() {
               </dd>
             </div>
           </dl>
-          <div className="grid mt-3 grid-cols-1 gap-4 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid mt-3 grid-cols-1 gap-4 bg-tealGreen-200 sm:grid-cols-2 md:grid-cols-4">
             {["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"].map((src, index) => (
               <div key={index}>
                 <img
-                  className="object-cover object-center w-full h-45 max-w-full rounded-lg"
+                  className="object-cover object-center w-full h-80 max-w-full rounded-lg"
                   src={`/Iain/${src}`}
                   alt="gallery-photo"
                 />
