@@ -120,6 +120,30 @@ export default function Example() {
             </div>
           </div>
           <div className="sm:col-span-2">
+            <label htmlFor="artist" className="block text-sm font-semibold leading-6 text-gray-900">
+              Do you have a specific artist in mind?
+            </label>
+            <div className="mt-2.5">
+              <select
+                id="artist"
+                name="artist"
+                required
+                className="block w-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+              >
+                <option value="" disabled selected>Select an option</option>
+                <option value="Lauren">Lauren</option>
+                <option value="Iain">Iain</option>
+                <option value="Steven">Steven</option>
+                <option value="Emily">Emily</option>
+                <option value="No">No</option>
+              </select>
+              <ChevronDownIcon
+                className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
+                aria-hidden="true"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
             <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
               Message
             </label>
