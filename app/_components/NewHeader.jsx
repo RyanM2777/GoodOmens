@@ -20,7 +20,7 @@ function NewHeader() {
     </div>
   </div>
   <div className="mx-auto max-w-screen-xl px-4 py-8 lg:flex lg:items-center lg:justify-center">
-    <p className="sm:text-xl/relaxed text-center bg-black bg-opacity-75 p-4 rounded">
+    <p className="sm:text-xl/relaxed text-center bg-white bg-opacity-30 p-4 rounded">
       Welcome to Good Omens, Dundee&#39;s Premier Tattoo & Piercing Studio!
       Our talented artists and piercers are dedicated to transforming your visions into stunning works of art. 
       Whether you&#39;re seeking a bold new tattoo, a delicate piece of body art, or a stylish piercing, we are here 
