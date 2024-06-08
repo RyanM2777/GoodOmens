@@ -70,16 +70,17 @@ export default function NewTeam() {
 }
 
 function PersonItem({ person }) {
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [showGallery, setShowGallery] = useState(false);
 
-    const handleImageClick = (src) => setSelectedImage(src);
-    const closeModal = () => setSelectedImage(null);
+    const toggleGallery = () => {
+        setShowGallery(!showGallery);
+    };
 
     return (
         <li className="py-6 px-8 bg-tealGreen-200 rounded-lg shadow-md">
             <div className="flex items-center gap-8">
                 <div className="flex-none">
-                    <img className="h-64 w-64 rounded-full object-cover cursor-pointer" src={person.imageUrl} alt="" onClick={() => handleImageClick(person.imageUrl)} />
+                    <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
                 </div>
                 <div className="flex-auto">
                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
@@ -90,14 +91,19 @@ function PersonItem({ person }) {
                     </div>
                 </div>
             </div>
-            {selectedImage && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
-                    <div className="relative">
-                        <img src={selectedImage} alt="Enlarged gallery" className="max-w-4xl max-h-3xl rounded-lg" />
-                        <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
-                    </div>
+            <div className="border-t mt-6 pt-6">
+                <div className="flex items-center justify-center">
+                    <button className="text-lg font-bold tracking-tight text-gray-700 border-b-2 border-gray-300" onClick={toggleGallery}>
+                        {showGallery ? 'Hide Gallery' : 'Show Gallery'}
+                    </button>
                 </div>
-           
+                {showGallery && (
+                    <div className="grid grid-cols-3 gap-4 mt-4">
+                        {person.images.map((image, index) => (
+                            <img key={index} className="w-full h-32 object-cover rounded-lg" src={image} alt={`Gallery ${index + 1}`} />
+                        ))}
+                    </div>
+                )}
             </div>
         </li>
     );
