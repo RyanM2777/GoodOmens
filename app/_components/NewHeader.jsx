@@ -16,7 +16,7 @@ function NewHeader() {
       <h1 className="text-2xl font-extrabold sm:text-4xl md:text-5xl text-white">
         Welcome to
       </h1>
-      <strong className="font-extrabold text-white text-2xl sm:text-4xl md:text-5xl whitespace-nowrap">
+      <strong className="font-extrabold text-white text-2xl sm:text-4xl md:text-5xl">
         Good Omens Tattoo and Piercing
       </strong>
     </div>
@@ -30,6 +30,7 @@ function NewHeader() {
     </p>
   </div>
 </section>
+
 
 
 
