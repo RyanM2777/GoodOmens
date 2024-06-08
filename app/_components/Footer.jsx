@@ -83,7 +83,10 @@ function Footer() {
         </a>
       </li>
     </ul>
-    <p>Website designed by <a href="https://rmwebdesigns.co.uk">RM Web Designs</a></p>
+   <p className="mx-auto mt-6 max-w-lg text-center leading-relaxed text-gray-500">
+    Website designed by <a href="https://rmwebdesigns.co.uk">RM Web Designs</a>
+    </p>
+
   </div>
 </footer>
   )
