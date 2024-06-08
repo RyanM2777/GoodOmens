@@ -32,7 +32,7 @@ export function HomeGallery() {
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
           <div className="relative">
-            <img src={selectedImage} alt="Enlarged gallery" className="max-w-3xl max-h-full rounded-lg" />
+            <img src={selectedImage} alt="Enlarged gallery" className="max-w-3xl max-h-90 rounded-lg" />
             <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
           </div>
         </div>
