@@ -71,9 +71,18 @@ export default function NewTeam() {
 
 function PersonItem({ person }) {
     const [showGallery, setShowGallery] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
 
     const toggleGallery = () => {
         setShowGallery(!showGallery);
+    };
+
+    const openImage = (image) => {
+        setSelectedImage(image);
+    };
+
+    const closeImage = () => {
+        setSelectedImage(null);
     };
 
     return (
@@ -100,11 +109,16 @@ function PersonItem({ person }) {
                 {showGallery && (
                     <div className="grid grid-cols-3 gap-4 mt-4">
                         {person.images.map((image, index) => (
-                            <img key={index} className="w-full h-32 object-cover rounded-lg" src={image} alt={`Gallery ${index + 1}`} />
+                            <img key={index} className="w-full h-32 object-cover rounded-lg cursor-pointer" src={image} alt={`Gallery ${index + 1}`} onClick={() => openImage(image)} />
                         ))}
                     </div>
                 )}
             </div>
+            {selectedImage && (
+                <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50">
+                    <img className="max-w-screen-lg max-h-screen" src={selectedImage} alt="Selected Image" onClick={closeImage} />
+                </div>
+            )}
         </li>
     );
 }
