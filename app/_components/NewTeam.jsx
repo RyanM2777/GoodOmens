@@ -26,7 +26,7 @@ const people = [
 
 export default function NewTeam() {
     return (
-        <div className="bg-tealGreen-100 py-24 sm:py-32">
+        <div className="bg-tealGreen-200 py-24 sm:py-32">
             <div className="mx-auto max-w-8xl px-6 lg:px-8">
                 <div className="text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet the Artists</h2>
@@ -120,12 +120,12 @@ function NewArtistInfo({ person }) {
                     z-index: 1000;
                 }
                 .enlarged {
-                    max-width: 90vw;
-                    max-height: 90vh;
-                    width: auto;
-                    height: auto;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                }
+      max-width: calc(4.5rem * 16);
+      max-height: 90vh;
+      width: auto;
+      height: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
                 .gallery-image {
                     cursor: pointer;
                 }
@@ -151,11 +151,11 @@ function NewArtistInfo({ person }) {
                             <dd className="text-gray-700 sm:col-span-2">{artistDetails[person].bio}</dd>
                         </div>
                     </dl>
-                    <div className="grid grid-cols-1 gap-4 mt-3 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-4 mt-3 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-4">
                         {artistDetails[person].images.map((image, index) => (
                             <div key={index}>
                                 <img
-                                    className={`object-cover object-center w-full h-45 max-w-full rounded-lg gallery-image ${enlargedImage === image ? 'enlarged' : ''}`}
+                                    className={`object-cover object-center w-full h-80 max-w-full rounded-lg gallery-image ${enlargedImage === image ? 'enlarged' : ''}`}
                                     src={image}
                                     alt="gallery-photo"
                                     onClick={() => toggleEnlargedImage(image)}
