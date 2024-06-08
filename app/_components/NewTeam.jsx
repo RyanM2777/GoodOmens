@@ -7,21 +7,24 @@ const people = [
         role: '@LaurenMcneeTattoo',
         imageUrl: '/ProfileLauren.jpeg',
     },
-    {
-        name: 'Emily',
-        role: '@hvntertattoos',
-        imageUrl: '/ProfileEmily.jpeg',
-    },
-    {
-        name: 'Steven',
-        role: '@stevenblance',
-        imageUrl: '/ProfileSteven.jpg',
-    },
+
     {
         name: 'Iain',
         role: '@tattoosbyhank1981',
         imageUrl: '/ProfileIain.jpg',
     },
+     {
+        name: 'Steven',
+        role: '@stevenblance',
+        imageUrl: '/ProfileSteven.jpg',
+    },
+    {
+        name: 'Emily',
+        role: '@hvntertattoos',
+        imageUrl: '/ProfileEmily.jpeg',
+    },
+   
+    
 ];
 
 export default function NewTeam() {
