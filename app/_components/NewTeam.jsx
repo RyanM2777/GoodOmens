@@ -93,7 +93,7 @@ function PersonItem({ person }) {
             </div>
             <div className="border-t mt-6 pt-6">
                 <div className="flex items-center justify-center">
-                    <button className="text-lg font-bold tracking-tight text-gray-700" onClick={toggleGallery}>
+                    <button className="text-lg font-bold tracking-tight text-gray-700 border-b-2 border-gray-300" onClick={toggleGallery}>
                         {showGallery ? 'Hide Gallery' : 'Show Gallery'}
                     </button>
                 </div>
@@ -108,3 +108,4 @@ function PersonItem({ person }) {
         </li>
     );
 }
+
