@@ -28,7 +28,7 @@ export function HomeGallery() {
   const closeModal = () => setSelectedImage(null);
 
   return (
-    <div className="bg-tealGreen-400">
+    <div className="bg-tealGreen-500">
       <div className="text-center py-8">
         <h2 className="text-3xl font-bold text-white">
           Some of our work
