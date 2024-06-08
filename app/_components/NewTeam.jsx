@@ -71,15 +71,12 @@ export default function NewTeam() {
 
 function PersonItem({ person }) {
     const [showGallery, setShowGallery] = useState(false);
-    const [enlargedImage, setEnlargedImage] = useState(null);
 
-    const toggleGallery = () => {
-        setShowGallery(!showGallery);
-    };
 
-    const toggleEnlargedImage = (src) => {
-        setEnlargedImage(enlargedImage === src ? null : src);
-    };
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (src) => setSelectedImage(src);
+  const closeModal = () => setSelectedImage(null);
 
     return (
         <li className="py-6 px-8 bg-tealGreen-200 rounded-lg shadow-md">
@@ -96,18 +93,14 @@ function PersonItem({ person }) {
                     </div>
                 </div>
             </div>
-            {enlargedImage && (
-                <div className="overlay" onClick={() => setEnlargedImage(null)}>
-                    <img className="enlarged" src={enlargedImage} alt="enlarged-photo" />
-                </div>
-            )}
-            <div className={`modal ${showGallery ? 'show' : ''}`}>
-                <div className="modal-content">
-                    <span className="close" onClick={toggleGallery}>&times;</span>
-                    {person.images.map((image, index) => (
-                        <img key={index} className="modal-image" src={image} alt={`Gallery ${index + 1}`} onClick={() => toggleEnlargedImage(image)} />
-                    ))}
-                </div>
+           {selectedImage && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
+          <div className="relative">
+            <img src={selectedImage} alt="Enlarged gallery" className="max-w-4xl max-h-3xl rounded-lg" />
+            <button className="absolute top-2 right-2 text-white text-2xl" onClick={closeModal}>&times;</button>
+          </div>
+        </div>
+      )}
             </div>
         </li>
     );
