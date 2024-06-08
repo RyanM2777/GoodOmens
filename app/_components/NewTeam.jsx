@@ -61,69 +61,21 @@ export default function NewTeam() {
                 </div>
                 <ul role="list" className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-y-12  sm:gap-y-16">
                     {people.map((person) => (
-                        <li key={person.name}>
-                            <div className="flex gap-6">
-                                <div className="flex-none">
-                                    <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
-                                </div>
-                                <div className="flex-auto">
-                                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                                    <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
-                                </div>
+                        <li key={person.name} className="flex gap-6">
+                            <div className="flex-none">
+                                <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
                             </div>
-                            <div className="mt-4">
+                            <div className="flex-auto">
+                                <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                                <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
+                            </div>
+                            <div className="flex-auto">
                                 <p className="text-base leading-6 text-gray-700">{person.bio}</p>
-                            </div>
-                            <div className="mt-4">
-                                <NewArtistInfo person={person} />
                             </div>
                         </li>
                     ))}
                 </ul>
             </div>
-        </div>
-    );
-}
-
-function NewArtistInfo({ person }) {
-    const [showGallery, setShowGallery] = useState(false);
-    const [enlargedImage, setEnlargedImage] = useState(null);
-
-    const toggleGallery = () => {
-        setShowGallery((prev) => !prev);
-    };
-
-    const toggleEnlargedImage = (src) => {
-        setEnlargedImage(enlargedImage === src ? null : src);
-    };
-
-    return (
-        <div className="mt-4">
-            <div className="flex items-center justify-center">
-                <button className="text-indigo-600 font-semibold focus:outline-none" onClick={toggleGallery}>
-                    {showGallery ? 'Hide Gallery' : 'Show Gallery'}
-                </button>
-                <div className="flex-auto border-t border-gray-300 ml-4"></div>
-            </div>
-            {showGallery && (
-                <div className="grid grid-cols-1 gap-4 mt-3 bg-tealGreen-100 sm:grid-cols-2 md:grid-cols-4">
-                    {person.images.map((image, index) => (
-                        <div key={index}>
-                            <img
-                                className={`object-cover object-center w-full h-80 max-w-full rounded-lg gallery-image ${enlargedImage === image ? 'enlarged' : ''}`}
-                                src={image}
-                                alt="gallery-photo"
-                                onClick={() => toggleEnlargedImage(image)}
-                            />
-                        </div>
-                    ))}
-                </div>
-            )}
-            {enlargedImage && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50" onClick={() => setEnlargedImage(null)}>
-                    <img className="max-h-full max-w-full" src={enlargedImage} alt="enlarged-photo" />
-                </div>
-            )}
         </div>
     );
 }
