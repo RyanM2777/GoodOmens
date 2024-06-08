@@ -52,7 +52,7 @@ const people = [
 export default function NewTeam() {
     return (
         <div className="bg-tealGreen-200 py-24 sm:py-32">
-            <div className="mx-auto max-w-8xl px-6 lg:px-34">
+            <div className="mx-auto max-w-8xl px-6 lg:px-8">
                 <div className="text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet the Artists</h2>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -61,32 +61,46 @@ export default function NewTeam() {
                 </div>
                 <ul role="list" className="mt-12">
                     {people.map((person) => (
-                        <li key={person.name} className="py-6 px-8 bg-tealGreen-200 rounded-lg shadow-md">
-                            <div className="flex items-center gap-8">
-                                <div className="flex-none">
-                                    <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
-                                </div>
-                                <div className="flex-auto">
-                                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                                    <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
-                                    <div className="border-t mt-4"></div>
-                                    <div className="mt-4">
-                                        <p className="text-base leading-6 text-gray-700">{person.bio}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="border-t mt-6 pt-6">
-                                <h4 className="text-lg font-bold tracking-tight text-gray-900">Gallery</h4>
-                                <div className="grid grid-cols-3 gap-4 mt-4">
-                                    {person.images.map((image, index) => (
-                                        <img key={index} className="w-full h-32 object-cover rounded-lg" src={image} alt={`Gallery ${index + 1}`} />
-                                    ))}
-                                </div>
-                            </div>
-                        </li>
+                        <PersonItem key={person.name} person={person} />
                     ))}
                 </ul>
             </div>
         </div>
+    );
+}
+
+function PersonItem({ person }) {
+    const [showGallery, setShowGallery] = useState(false);
+
+    const toggleGallery = () => {
+        setShowGallery(!showGallery);
+    };
+
+    return (
+        <li className="py-6 px-8 bg-tealGreen-200 rounded-lg shadow-md">
+            <div className="flex items-center gap-8">
+                <div className="flex-none">
+                    <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
+                </div>
+                <div className="flex-auto">
+                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                    <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
+                    <div className="border-t mt-4"></div>
+                    <div className="mt-4">
+                        <p className="text-base leading-6 text-gray-700">{person.bio}</p>
+                    </div>
+                </div>
+            </div>
+            <div className="border-t mt-6 pt-6">
+                <button className="text-lg font-bold tracking-tight text-gray-900" onClick={toggleGallery}>Show Gallery</button>
+                {showGallery && (
+                    <div className="grid grid-cols-3 gap-4 mt-4">
+                        {person.images.map((image, index) => (
+                            <img key={index} className="w-full h-32 object-cover rounded-lg" src={image} alt={`Gallery ${index + 1}`} />
+                        ))}
+                    </div>
+                )}
+            </div>
+        </li>
     );
 }
