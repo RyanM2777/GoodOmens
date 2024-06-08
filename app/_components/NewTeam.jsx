@@ -71,16 +71,21 @@ export default function NewTeam() {
 
 function PersonItem({ person }) {
     const [showGallery, setShowGallery] = useState(false);
+    const [enlargedImage, setEnlargedImage] = useState(null);
 
     const toggleGallery = () => {
         setShowGallery(!showGallery);
+    };
+
+    const toggleEnlargedImage = (src) => {
+        setEnlargedImage(enlargedImage === src ? null : src);
     };
 
     return (
         <li className="py-6 px-8 bg-tealGreen-200 rounded-lg shadow-md">
             <div className="flex items-center gap-8">
                 <div className="flex-none">
-                    <img className="h-64 w-64 rounded-full object-cover" src={person.imageUrl} alt="" />
+                    <img className="h-64 w-64 rounded-full object-cover cursor-pointer" src={person.imageUrl} alt="" onClick={() => toggleEnlargedImage(person.imageUrl)} />
                 </div>
                 <div className="flex-auto">
                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
@@ -99,12 +104,17 @@ function PersonItem({ person }) {
                 </div>
                 {showGallery && (
                     <div className="grid grid-cols-3 gap-4 mt-4">
-                        {person.images.map((image, index) => (
-                            <img key={index} className="w-full h-32 object-cover rounded-lg" src={image} alt={`Gallery ${index + 1}`} />
+                        {person                        .images.map((image, index) => (
+                            <img key={index} className="w-full h-32 object-cover rounded-lg cursor-pointer" src={image} alt={`Gallery ${index + 1}`} onClick={() => toggleEnlargedImage(image)} />
                         ))}
                     </div>
                 )}
             </div>
+            {enlargedImage && (
+                <div className="overlay" onClick={() => setEnlargedImage(null)}>
+                    <img className="enlarged" src={enlargedImage} alt="enlarged-photo" />
+                </div>
+            )}
         </li>
     );
 }
