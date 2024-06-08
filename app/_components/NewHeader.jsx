@@ -11,16 +11,14 @@ function NewHeader() {
     backgroundRepeat: "no-repeat",
   }}
 >
-  <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
-    <div className="mx-auto max-w-xl text-center">
-      <div className="text-center">
-        <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
-          Welcome to
-        </h1>
-        <strong className="font-extrabold text-white text-3xl sm:text-5xl whitespace-nowrap">
-          Good Omens Tattoo and Piercing
-        </strong>
-      </div>
+  <div className="flex flex-col items-center justify-center mx-auto max-w-screen-xl px-4 py-32 lg:h-screen">
+    <div className="text-center">
+      <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
+        Welcome to
+      </h1>
+      <strong className="font-extrabold text-white text-3xl sm:text-5xl whitespace-nowrap">
+        Good Omens Tattoo and Piercing
+      </strong>
     </div>
   </div>
   <div className="mx-auto max-w-screen-xl px-4 py-8 lg:flex lg:items-center lg:justify-center">
