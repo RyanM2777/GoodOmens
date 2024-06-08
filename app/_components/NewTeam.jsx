@@ -67,7 +67,7 @@ function NewArtistInfo({ person }) {
 
     const artistDetails = {
         Lauren: {
-            mediaTag: '@LaurenMcneeTattoo',
+           
             bio: 'Lauren started off tattooing in 2017, and quickly found her niche. She loves tattooing a variety of styles, whether its bright fun cartoons or dark and creepy skulls. Realism, neo traditional and ornamental work is where she thrives, so book her up for any portraits, flowers, or anything fun and weird!',
             images: [
                 '/Lauren/1.jpeg', '/Lauren/2.jpeg', '/Lauren/4.jpeg',
@@ -75,17 +75,18 @@ function NewArtistInfo({ person }) {
                 '/Lauren/8.jpeg', '/Lauren/9.jpeg'
             ]
         },
-        Emily: {
-            mediaTag: '@hvntertattoos',
-            bio: 'Emily started learning to tattoo 7 years ago in Glasgow before taking time out to get a degree in Computer Arts, specialising in 3D environment art for video games. She\'s been been back tattooing for over a year now and mainly works in illustrative blackwork, but is happy to work with other styles. Emily loves to tattoo all things gothic, horror and spooky, but also anything video games or simpsons themed, or all of the above combined!',
+
+        Iain: {
+
+            bio: 'Iain began tattooing in 2005 and has since worked all over including, Denmark, Sweden, Spain, and the Cayman Islands. Due to this he is capable of covering all styles of work and designs. He prefers Japanese and dark horror work but anything else is happily taken on too.',
             images: [
-                '/Emily/1.jpeg', '/Emily/2.jpeg', '/Emily/4.jpeg',
-                '/Emily/5.jpeg', '/Emily/6.jpeg', '/Emily/7.jpeg',
-                '/Emily/8.jpeg', '/Emily/9.jpeg', '/Emily/10.jpeg'
+                '/Iain/1.jpg', '/Iain/2.jpg', '/Iain/3.jpg',
+                '/Iain/4.jpg', '/Iain/5.jpg', '/Iain/6.jpg',
+                '/Iain/7.jpg', '/Iain/8.jpg', '/Iain/9.jpg'
             ]
         },
+
         Steven: {
-            mediaTag: '@stevenblance',
             bio: 'Steven is a versatile and established artist with over a decade in the tattoo industry. With a previous history in fine art, Steven found his way into tattooing through portraiture and realism. Fueling his desire to learn, he\'s worked all over; from his home town of Dunfermline, to Glasgow, London and as far as California. Focusing on neo traditional, and with a background in realism and portraiture - Steven is equipped to take on any tattoo idea you might have',
             images: [
                 '/Steven/1.jpg', '/Steven/2.jpg', '/Steven/4.jpg',
@@ -93,15 +94,16 @@ function NewArtistInfo({ person }) {
                 '/Steven/8.jpg', '/Steven/9.jpg', '/Steven/10.jpg'
             ]
         },
-        Iain: {
-            mediaTag: '@tattoosbyhank1981',
-            bio: 'Iain began tattooing in 2005 and has since worked all over including, Denmark, Sweden, Spain, and the Cayman Islands. Due to this he is capable of covering all styles of work and designs. He prefers Japanese and dark horror work but anything else is happily taken on too.',
+        
+        Emily: {
+            bio: 'Emily started learning to tattoo 7 years ago in Glasgow before taking time out to get a degree in Computer Arts, specialising in 3D environment art for video games. She\'s been been back tattooing for over a year now and mainly works in illustrative blackwork, but is happy to work with other styles. Emily loves to tattoo all things gothic, horror and spooky, but also anything video games or simpsons themed, or all of the above combined!',
             images: [
-                '/Iain/1.jpg', '/Iain/2.jpg', '/Iain/3.jpg',
-                '/Iain/4.jpg', '/Iain/5.jpg', '/Iain/6.jpg',
-                '/Iain/7.jpg', '/Iain/8.jpg', '/Iain/9.jpg'
+                '/Emily/1.jpeg', '/Emily/2.jpeg', '/Emily/4.jpeg',
+                '/Emily/5.jpeg', '/Emily/6.jpeg', '/Emily/7.jpeg',
+                '/Emily/8.jpeg', '/Emily/9.jpeg', '/Emily/10.jpeg'
             ]
         }
+          
     };
 
     return (
@@ -141,10 +143,6 @@ function NewArtistInfo({ person }) {
                         <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
                             <dt className="font-medium text-gray-900">Name</dt>
                             <dd className="text-gray-700 sm:col-span-2">{person}</dd>
-                        </div>
-                        <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
-                            <dt className="font-medium text-gray-900">Media Tag</dt>
-                            <dd className="text-gray-700 sm:col-span-2">{artistDetails[person].mediaTag}</dd>
                         </div>
                         <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
                             <dt className="font-medium text-gray-900">Bio</dt>
