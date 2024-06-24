@@ -7,6 +7,7 @@ import Footer from './_components/Footer'
 import Faq from "./_components/FaqTattoo";
 import Hero from "./_components/NewHeader";
 import HomeGallery from "./_components/HomeGallery";
+import './globals.css';
 
 export const metadata = {
   title: 'Good Omens - Tattoo & Piercing',
