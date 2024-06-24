@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Lulo Clean W01 One';
+  src: url('/FONTSFREE-NET-LULO-CLEAN-W01-ONE.TTF') format('woff2'),
+       url('/FONTSFREE-NET-LULO-CLEAN-W01-ONE.TTF') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,8 +25,9 @@
 }
 
 body {
+  font-family: 'Lulo Clean W01 One', sans-serif;
   color: rgb(var(--foreground-rgb));
-  background: white
+  background: white;
 }
 
 @layer utilities {
