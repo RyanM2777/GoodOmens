@@ -30,7 +30,7 @@ export function HomeGallery() {
   return (
     <div className="bg-tealGreen-200">
       <div className="text-center py-8">
-        <h2 className="text-3xl font-bold text-white">
+        <h2 className="text-3xl font-bold text-black">
           Some of our work
         </h2>
       </div>
